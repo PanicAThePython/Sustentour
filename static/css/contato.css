@@ -1,0 +1,85 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #CFCFCF;
+
+}
+
+
+form{
+	font-size: 16px;
+	background: #9C9C9C;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0 10px 10px 10px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 1px solid;
+	color: #FFF;
+	
+	
+}
+
+h1{
+	color: black;
+	text-align: center;
+	font-family: "Yu Gothic Light";
+}
+
+input, textarea{
+	width: 474px;
+	padding: 10px;
+	font-family: "Yu Gothic Light";
+}
+
+.enviar input {
+	background-color: #4d4d4d ;
+	height: 40px;
+	width: 150px;
+	font-weight: bold;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 1px solid;
+	color: #FFF;
+	cursor: pointer;
+	font-family: "Yu Gothic Light";
+	text-align: center;
+}
+
+.enviar input:hover{
+	background: black;
+	float: 89px;
+}
+
+textarea {
+	width: 474px;
+	height: 120px;
+	line-height: 20px;
+}
+
+footer {
+	background-color: black;
+	height: 60px;
+
+}
+
+h2{
+	font-family: "Yu Gothic Light";
+	text-align: center;
+}
+
+
+p{
+	color: black;
+	text-align: center;
+	font-family: "Yu Gothic Light";
+}
+
+h3 {
+	color: white;
+	font-family: "Yu Gothic Light";
+	text-align: center;
+	font-size: 12px;
+}

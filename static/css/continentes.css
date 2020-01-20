@@ -1,0 +1,228 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+
+.texto{
+	font-family: "Yu Gothic Light";
+	text-align: center;
+
+}
+
+.imagem {
+	position: absolute;
+	left: 100px;
+}
+
+.img_lado {
+	position: absolute;
+	float: right;
+	right: 200px;
+}
+
+.img_lado2 {
+	position: absolute;
+	float: right;
+	right: 200px;
+	bottom: -20%;
+}
+
+.br {
+	margin:0 auto;
+	background-color: black;
+	width: 100%;
+}
+.imagem:hover {
+	background-color: #8B8378;
+	opacity: 0.7;
+}
+
+.img_lado:hover{
+	background-color: #8B0000;
+	opacity: 0.7;
+}
+
+.img_lado2:hover{
+	background-color: #228B22;
+	opacity: 0.7;
+}
+
+
+
+
+.alinhar {
+	position: relative;
+	vertical-align:65px;
+	margin-left: 12px;
+    margin-right: 10px;
+
+}
+
+
+
+img:hover{
+	background-color: #BEBEBE;
+	opacity: 0.5;
+}
+
+
+
+
+
+
+.coluna {
+margin:0 auto;
+text-align: center;
+-moz-column-count: 3;
+-webkit-column-count:3;
+column-count:3;
+color:#000000;
+}
+
+
+.fonte {
+	font-family: "Yu Gothic Light";
+
+}
+
+#esquerda{float: left; width: 45%; height: 150px; overflow: auto; margin-top: 12px; margin-left: 10px;}
+#direita{float: right; width: 45%; height: 150px; overflow: auto; border-left: solid #CDCDB4 1px; padding-left: 80px; margin-top: 12px;}
+.diminuihr{background-color:#E9967A;}
+.linha{background-color: #E9967A}
+
+
+
+
+
+
+
+
+.menu-button {
+  -webkit-transition: 0.4s;  /* Extensão do Chrome */ 
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  right: 640px;
+  bottom: -4090px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 24px;
+  background-color: black;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+.menu-button:hover {
+  background-color: black;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+}
+.menu-button a {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 24px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+.menu-button a:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+}
+.menu-button a:nth-child(2) {
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  background-color: #006400;
+}
+.menu-button a:nth-child(3) {
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  position: absolute;
+  right: 30px; /*Quando volta o ícone, precisa definir a posição*/
+  bottom: 10px;
+  background-color: #006400;
+}
+.menu-button a:nth-child(4) {
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  background-color: #006400;
+}
+.menu-button:hover a {
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+}
+.menu-button:hover a:nth-child(2) {  /*Twitter*/
+  right: -65px;
+  bottom: 60px;
+}
+.menu-button:hover a:nth-child(2):hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  background: #3ea1ec;
+}
+.menu-button:hover a:nth-child(3) { /*Google*/
+  right: 65px;
+  bottom: 65px;
+}
+.menu-button:hover a:nth-child(3):hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  background: #d83a2b;
+}
+.menu-button:hover a:nth-child(4) { /*Code*/
+  right: 0px;
+  bottom: 80px;
+}
+.menu-button:hover a:nth-child(4):hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  /*background: #323232;*/
+  background-color: black;
+}
+
+
+
+
+
+.centro{text-align: center;}
+
+
+
+.esquerda_alinhar {
+  font-family: "Yu Gothic Light";
+  position: relative;
+  left: 15px;
+  text-align: center;
+}
+
+
+
+.hzinho{
+  font-family: "Yu Gothic Light";
+  text-align: center;
+  
+}
+
+aside {
+ position: relative;
+ left: 15px;
+ font-size: 20px;
+}

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Continentes</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../static/css/sustentour.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="shortcut icon" href="../static/midia/imagens/logo.png" type="image/x-png">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+ <script >
+  //Quando o documento estiver pronto
+$(document).ready(function() {
+   
+    //Função que mostra o conteúdo de acordo com o botão clicado
+    $("#menu2 li a").on('click', function(e) {
+        e.preventDefault();
+        var page = $(this).data('page');
+        $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
+            $(this).addClass('hide');
+            $('#pages .page[data-page="'+page+'"]').fadeIn('slow').removeClass('hide');
+        });
+    });
+    
+    //Função que insere a classe Active no botão que foi clicado
+    $("#menu2 li").on('click', function(){
+         $(this).siblings().removeClass('active');
+         $(this).addClass('active');
+    });
+});
+ </script>
+
+
+<style>
+
+    *{
+        font-family: "Yu Gothic Light";
+    }
+    
+    a:link{
+        text-decoration: none;
+        color: white;
+    }
+
+    .a a{
+        color: black;
+    }
+        
+    .espacamento_line1 {
+        line-height: 30px;
+        text-align: justify;
+    }
+
+        
+    .alinhar {
+        vertical-align:65px;
+    }
+
+        
+    #menuu ul {
+        padding:25px;
+        margin:20px;
+        list-style:none;
+        font-size: 20px;
+        color: black;
+        word-spacing: 35px;
+        font-family:"Yu Gothic Light";
+        float: right;
+        text-decoration: none;
+        position: relative;
+        top: -40px;
+    }
+
+    #menuu ul li {display: inline;}
+
+    .botao{
+        background-color: #8B0000;
+        padding: 14px 40px;
+    }
+
+    .centro{
+        text-align: center; 
+        bottom: -30px;;}
+
+    #menu li {
+        padding:20px;
+        margin:20px;
+        list-style:none;
+        font-size: 20px;
+        display: inline-block;
+    }
+
+    #menu li a{
+    color: black;
+    font-family: "Yu Gothic Light";
+    word-spacing: 35px;
+    text-decoration:none;
+    top: -90px;
+    position: relative;
+
+    }
+
+
+    #menu2 li {
+        padding:2%;
+        margin:2%;
+        list-style:none;
+        font-size: 20px;
+        display: inline-block;
+    }
+
+
+    #menu2 li a{
+    color: black;
+    font-family: "Yu Gothic Light";
+    word-spacing: 35px;
+    text-decoration:none;
+    top: -10%;
+    position: relative;
+
+    }
+
+    #menu2 ul {
+        padding:2%;
+        margin:2%;
+        list-style:none;
+        font-size: 20px;
+        color:white;
+        word-spacing: 35px;
+        font-family:"Yu Gothic";
+        float: right;
+        text-decoration: none;
+        position: relative;
+        top: -40px;
+        margin-right: 0%;
+    }
+
+        
+    .cultura img {
+        float:left;
+        margin:0 20px 10px 0;
+    }
+    
+
+    .cultura{
+        
+        margin: 5%;
+        
+    }
+
+    .textoblc h1{
+        color: black;
+    }
+    .center{
+        text-align: center;
+    }
+
+
+    #pages section header{
+        margin-bottom: 16px;
+    }
+
+    .page{display: none;}
+    .hide { display: none;}
+    .active{ background: white; }
+
+    
+
+    .fade {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeInUp {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInUp {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
+
+    body {
+        background-image: url(../static/midia/imagens/montain.jpg);
+        background-repeat: no-repeat;
+        background-size:  100% 670px;
+    }
+
+</style>
+
+</head>
+
+<body>
+  <div id="menuu">
+  <ul>
+    <div class="a">
+    <li><a href="compras.html">Serviços</a></li>
+    <li><a href="contato.html">Contato</a></li>
+    <li><a href="login.html">Login</a></li>
+    </div>
+  </ul>
+  </div>
+
+<br>
+<br>
+<br>
+
+<div class="fade">
+  <div class="textoblc">
+    <h1>Continentes</h1>
+    <p>Está em busca do lugar certo?<br>Deslize para baixo e clique em um dos continentes para começar!</p>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="centro">
+  <ul id="menu2">
+    <li><a data-page="africa" href="#"><h3> África </h3> </a></li>
+    <li><a data-page="america" href="#"><h3> América </h3> </a></li> 
+    <li><a data-page="asia" href="#"><h3> Ásia </h3> </a></li>
+    <li><a data-page="europa" href="#"><h3> Europa </h3> </a></li> 
+    <li><a data-page="oceania" href="#"><h3> Oceania </h3> </a></li>
+  </ul>
+</div>
+
+<div id="pages">
+    <section id="oceania" class="page" data-page="oceania">
+    <header class="texto">Oceania</header>
+    <br>
+    <div class="center">
+        <img class="alinhar" src="../static/midia/imagens/aust.jpg" width="248" height="350">
+        <img src="../static/midia/imagens/wc.jpg" width="248" height="350" >
+        <img class="alinhar" src="../static/midia/imagens/brown.jpg" width="248" height="350">  
+        <img src="../static/midia/imagens/sd.png" width="248" height="350">   
+        <img class="alinhar" src="../static/midia/imagens/oh.png" width="248" height="350">          
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <header class="texto">Cultura</header>   
+    <div class="cultura">
+        <img src="../static/midia/imagens/mao.jpg" width="400" height="250">
+        <p class="espacamento_line1">A Oceania é um continente localizado no hemisfério sul, e é considerado o menor de todos. Não
+    obstante, é um dos melhores lugares para se viver ou visitar.<br>
+    Por questões de curiosidade, a Oceania é composta 90% por território australiano, e os 10% de outros
+    países. Sendo importante destacar que a maioria dos países são territórios ultramarinos, garantindo
+    um clima confortável para todas as estações do ano.<br>
+    Ainda assim, a Oceania tem em si uma grandiosa relevância cultural, sendo que em todos os países
+    está presente a cultura indígena, mais predominantemente a Maori.</p>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <header class="texto">O que fazer?</header>  
+    <div class="cultura">
+        <img src="../static/midia/imagens/nz.jpg" width="400" height="250">
+        <p class="espacamento_line1">Na Oceania a aventura é garantida!
+    Seja qualquer lugar que você escolher, está prestes a se tornar o maior aventureiro da sua vida!<br>
+    Um dos principais países com maior fama de aventura é a Nova Zelândia, país no qual oferece uma diversidade de esportes radicais, desde rafting a voo livre. Mas já se você prefere conhecer os animais mais raros do mundo, a Austrália lhe oferece essa grande oportunidade.
+    Se você se interessou mais pela Oceania, clique aqui para conhecer um pouco mais sobre o continente mais aventureiro do mundo todo!</p>
+    </div>
+   </section>
+
+<!-- AQUI TERMINA O DA OCEANIA E COMEÇA O DA ÁFRICA !-->
+
+
+    <section id="africa" class="page hide" data-page="africa"> 
+    <header class="texto">África</header>
+    <br>
+    <div class="center">
+        <img class="alinhar" src="../static/midia/imagens/sun.jpg" width="248" height="350">
+        <img src="../static/midia/imagens/moçambique.jpg" width="248" height="350" >
+        <img class="alinhar" src="../static/midia/imagens/areia.jpg" width="248" height="350">  
+        <img src="../static/midia/imagens/ocean.jpg" width="248" height="350">   
+        <img class="alinhar" src="../static/midia/imagens/sul.jpg" width="248" height="350">          
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <header class="texto">Cultura</header>
+    <br>
+    <div class="cultura">
+    <img src="../static/midia/imagens/lugar.jpeg" width="400" height="250"">
+    <p class="espacamento_line1"> Por apresentar diferentes tribos, a África abranje grande diversidade cultural, tendo diferentes rituais e religiões. Seus ritos são feitos através da dança e do canto, sendo estes feitos em grupo. Existem diferentes tipos de ritos usados para determinados momentos da vida, como um de grande importância, integração dos seres vivos e passagem da vida para a morte. Pelo fato de muitos africanos terem sido escravizados e enviados ao Brasil, influenciaram muito na cultura dele, trazendo a capoeira, o candomblé e ingredientes culinários, como o leite de coco, por exemplo.</p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <header class="texto">O que fazer?</header>
+    <br>
+    <div class="cultura">
+    <img src="../static/midia/imagens/deserto.jpeg" width="400" height="250">
+    <p class="espacamento_line1">Na África a aventura é garantida! Aqui, você pode fazer um safari pela savana africana ou, quem sabe, um passeio de dromedários pelo deserto! <br>
+Talvez visitar o país que foi cede na Copa do Mundo 2010, a África do Sul, ou então o país que deu origem a uma série de filmes de desenho animado, como o Madagascar!<br> 
+Por isso, não perca tempo! Venha se aventurar na África!</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</section>
+
+ 
+
+
+
+
+
+<!-- AQUI TERMINA O DA AMÉRICA E COMEÇA O DA ÁSIA !-->
+
+
+
+  <section id="asia" class="page hide" data-page="asia"> 
+    <header class="texto">Ásia</header>
+    <br>
+    <div class="center">
+        <img class="alinhar" src="../static/midia/imagens/day.jpg" width="248" height="350">
+        <img src="../static/midia/imagens/ind.jpg" width="248" height="350" >
+        <img class="alinhar" src="../static/midia/imagens/asia.jpg" width="248" height="350">  
+        <img src="../static/midia/imagens/temple.jpg" width="248" height="350">   
+        <img class="alinhar" src="../static/midia/imagens/river.jpg" width="248" height="350">          
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <header class="texto">Cultura</header>
+    <br>
+    <div class="cultura">
+    <img src="../static/midia/imagens/castle.jpg" width="400" height="250">
+    <p class="espacamento_line1">A Ásia é considerada o maior continente do mundo.E é justamente por isso que podemos perceber que é um continente extremamente rico em fatos históricos e em questões de diversidade cultural. Aqui, você poderá encontrar resquícios de antigas civilizações, tal como cidades subterrâneas ou até mesmo submersas, as quais deixaram um grande valor histórico para o continente asiático. Do mesmo modo, a Ásia apresenta uma gastronomia não só diversificada mas também muito exótica.</p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <header class="texto">O que fazer?</header>
+    <br>
+    <div class="cultura">
+    <img src="../static/midia/imagens/cult.jpg" width="400" height="250">
+    <p class="espacamento_line1">Na Ásia, a aventura é um pouco diferenciada. Karatê e Judô são os principais esportes praticados por lá, mas isso não significa que esportes como escalada, esqui, rafting não sejam praticados, pois os mesmos só são praticados em menor quantidade. Então, se você está a fim de se aventurar nos vales e templos asiáticos, não perca tempo e venha logo conhecer todas as incríveis histórias épicas da Ásia e se aventurar explorando os grandes templos!</p>
+    </div>
+</section>
+
+
+
+<!-- AQUI TERMINA O DA AMÉRICA E COMEÇA O DA ÁSIA !--> 
+
+<section id="america" class="page hide" data-page="america"> 
+    <header class="texto">América</header>
+    <br>
+    <div class="center">
+        <img class="alinhar" src="../static/midia/imagens/new_york.jpg" width="248" height="350">
+        <img src="../static/midia/imagens/cana.jpg" width="248" height="350" >
+        <img class="alinhar" src="../static/midia/imagens/eua.jpg" width="248" height="350">  
+        <img src="../static/midia/imagens/cachoeira.jpg" width="248" height="350">   
+        <img class="alinhar" src="../static/midia/imagens/sol.jpg" width="248" height="350">          
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <header class="texto">Cultura</header>
+    <br>
+    <div class="cultura">
+    <img src="../static/midia/imagens/cultura.jpg" width="400" height="250">
+    <p class="espacamento_line1"> Por ser o segundo maior continente do mundo, por ser dividido em três partes e por ter sido colonizado por diferentes países de diferentes continentes, a América é um lugar que abranje uma grande diversidade cultural, sendo uma ótima opção para quem quer aprender um pouco mais sobre o local.<br> Aqui, moraram tribos que foram muito importantes no desenvolvimento da arquitetura e agricultura, sendo responsáveis por grandes contruções, que estão de pé até os dias de hoje.<br> Venha passar suas férias na América e descobrir mais sobre a cultura!</p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <header class="texto">O que fazer?</header>
+    <br>
+    <div class="cultura">
+    <img src="../static/midia/imagens/ponte.jpg" width="400" height="250">
+    <p class="espacamento_line1">Quando se pensa na América, é impossível não lembrar dos famosos pontos turísticos e atrações, como a Estátua da Liberdade e a Walt Disney World, por exemplo. Sem falar nas aventuras que se podem ter aqui, como se aventurar nos Andes ou dar um mergulho em um lago cercado por cachoeiras. Por isso, não perca tempo! Venha viajar pela América, descobrir mais sobre a cultura e se divertir nesse paraíso!</p>
+    </div>
+</section>
+    <br>
+
+
+<!-- AQUI TERMINA O DA ÁSIA E COMEÇA O DA EUROPA !-->
+
+
+
+    <section id="europa" class="page hide" data-page="europa"> 
+    <header class="texto">Europa</header>
+    <br>
+    <div class="center">
+        <img class="alinhar" src="../static/midia/imagens/greece.jpg" width="248" height="350">
+        <img src="../static/midia/imagens/big.jpg" width="248" height="350" >
+        <img class="alinhar" src="../static/midia/imagens/spain.jpg" width="248" height="350">
+        <img src="../static/midia/imagens/eiffel.jpg" width="248" height="350" >
+        <img class="alinhar" src="../static/midia/imagens/italy.jpg" width="248" height="350">  
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <header class="texto">Cultura</header>
+    <br>
+    <div class="cultura">
+    <img src="../static/midia/imagens/igreja.jpg" width="400" height="250">
+    <p class="espacamento_line1"> A Europa é um continente localizado no hemisfério norte, abrangendo cerca de 50 países. Aqui, você encontra os pontos
+      turísticos mais famosos do mundo e os países 
+      investem de forma intensiva no turismo sustentável.<br>
+Neste continente ocorreram importantes revoluções culturais, políticas e econômicas.<br>
+A maioria dos países europeus é membro do bloco ecômico chamado União Europeia, onde os membros possuem a mesma moeda, o euro, e é permitida
+a livre circulação de pessoas entre tais nações.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <header class="texto">O que fazer?</header>
+    <br>
+    <div class="cultura">
+    <img src="../static/midia/imagens/train.jpg" width="400" height="250">
+    <p class="espacamento_line1">Venha conhecer a Europa!
+  Independente do lugar que escolher, você encontrará muita cultura e famosos monumentos!<br>
+Aqui, você pode visitar a nação da gastronomia e dona da Torre Eiffel, a França. Ou, quem sabe, o país da industrialização e da monarquia parlamentarista,
+a Inglaterra. Neste continente você encontrará muita história e cultura por todo lugar! Venha passar as férias aqui! </p>
+    </div>
+</section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="centro">
+  <div class="menu-button"><i class="zmdi zmdi-share"></i>
+      <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+      <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
+      <a href="#"><i class="zmdi zmdi-codepen"></i></a>
+  </div>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+<br>
+<div class="italico"> 
+  <h2>© 2018 Copyright: Todos os direitos reservados</h2>
+</div>
+<br>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

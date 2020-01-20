@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../static/css/sustentour.css">
+	<link rel="shortcut icon" href="../static/midia/imagens/logo.png" type="image/x-png">
+	<style type="text/css">
+#menuu {
+	height: 60px;
+	background-color: black;
+	color: white;
+}	
+
+.a a{
+	color: white;
+}
+
+body{
+	margin: 0 auto;
+	background-color: #CFCFCF;
+}
+
+
+
+a:hover {
+	color: #E9967A;
+}
+
+label:hover {
+	color: #E9967A;
+} 
+
+#menuu ul {
+	padding:25px;
+	margin:20px;
+	list-style:none;
+	font-size: 20px;
+	color: white;
+	word-spacing: 35px;
+	font-family:"Yu Gothic Light";
+	float: right;
+	text-decoration: none;
+	position: relative;
+	top: -30px;
+}
+
+#menuu ul li {display: inline;}
+
+
+	</style>
+</head>
+<body>
+	 <div id="menuu">
+  <ul>
+  		<div class="a">
+		<li><a href="compras.html">Serviços</a></li>
+		<li><a href="contato.html">Contato</a></li>
+		<li><a href="login.html">Login</a></li>
+		</div>
+  </ul>
+  </div>
+
+	
+
+	<div class="conteudo">
+		<img src="../static/midia/imagens/vr .jpeg">
+		<h1>Faça seu login</h1>
+		<br>
+		<br>
+		<br>
+		<form action="http://localhost:5000/autenticar" method=post>
+			<div class="label">
+				<input type="text" name="nome" placeholder="Nome de Usuário">
+			
+				<input type="password" name="senha" placeholder="Senha">
+			</div>
+			<div class="check">
+				<input type="checkbox" name="Lembrar" value="Lembrar"><label>Lembrar de mim</label></div>
+				<div class="login">
+					<a href="#">Esqueceu sua senha?</a>
+				</div>
+				<input type="submit" name="submit" value="Entrar" class="botao">
+				<br>
+				<br>
+				<div class="cadastro">
+				<a href="cadastro.html"> Não fez seu cadastro ainda? </a>
+			</div>
+			
+		</form>
+	</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>

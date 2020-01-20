@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+#menu ul {
+	padding:25px;
+	margin:20px;
+	list-style:none;
+	font-size: 20px;
+	color: black;
+	word-spacing: 35px;
+	font-family:"Yu Gothic";
+	float: right;
+	text-decoration: none;
+	position: relative;
+	top: -40px;
+}
+
+#menu ul li {display: inline;}
+
+
+ body {
+	background-image: url(Imagens/doar.jpg);
+	background-repeat: no-repeat;
+	background-size:  1350px 670px;
+
+}
+
+
+#titulo h1 {
+	text-align: center;
+  color: black;
+  margin-top: 16px;
+	font-size: 65px;
+	font-family: "Yu Gothic Light";
+	font-variant: normal;
+	font-weight: bold;
+}
+
+
+.centro {
+	text-align: center;
+	color: black;
+	font-family: "Yu Gothic";
+	font-size: 28px;
+	position: relative;
+	top: -40px;
+}
+
+
+.centro2 h2 {
+  text-align: center;
+	color: black;
+	font-family: "Yu Gothic Light";
+	font-weight: bold;
+	font-size: 32px;
+	position: relative;
+	top: -40px;
+}
+
+.centro2 p {
+  
+	text-align: justify;
+	font-family: "Yu Gothic";
+	font-size: 20px;
+  position: relative;
+  top: -40px;
+  text-indent: 60px;
+  line-height: 2;
+}
+
+.centro2 a{
+  font-weight: bold;
+}
+
+.centro3 {
+
+  text-align: center;
+  font-size: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  
+}
+
+.centro3 label{
+  font-size: 18px;
+  font-family: "Yu Gothic Light";
+  font-weight: bold;
+}
+
+.centro3 td{
+  font-size: 40px;
+}
+
+.centro3 legend{
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Yu Gothic Light";
+}
+
+#doar{
+	text-decoration: none;
+	margin:auto;
+}
+
+
+
+a:link {
+    text-decoration: none;
+    color: grey;
+  
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #212121;
+  text-align: center;
+}
+.menu-button {
+  -webkit-transition: 0.4s;  /* Extensão do Chrome */ 
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  right: 640px;
+  bottom: -100px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 24px;
+  background-color: black;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+.menu-button:hover {
+  background-color: black;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+}
+.menu-button a {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 24px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+.menu-button a:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+}
+.menu-button a:nth-child(2) {
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  background-color: #006400;
+}
+.menu-button a:nth-child(3) {
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  position: absolute;
+  right: 30px; /*Quando volta o ícone, precisa definir a posição*/
+  bottom: 10px;
+  background-color: #006400;
+}
+.menu-button a:nth-child(4) {
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  background-color: #006400;
+}
+.menu-button:hover a {
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+}
+.menu-button:hover a:nth-child(2) {  /*Twitter*/
+  right: -65px;
+  bottom: 60px;
+}
+.menu-button:hover a:nth-child(2):hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  background: #3ea1ec;
+}
+.menu-button:hover a:nth-child(3) { /*Google*/
+  right: 65px;
+  bottom: 65px;
+}
+.menu-button:hover a:nth-child(3):hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  background: #d83a2b;
+}
+.menu-button:hover a:nth-child(4) { /*Code*/
+  right: 0px;
+  bottom: 80px;
+}
+.menu-button:hover a:nth-child(4):hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  /*background: #323232;*/
+  background-color: black;
+}
+
+
+footer {
+	background-color: black;
+}
+
+
+
+.italico {
+	margin: 0px auto:0;
+	padding: 1px;
+	font-family: "Yu Gothic Light";
+	color: white;
+	font-size: 8px;
+	text-align: center;
+}

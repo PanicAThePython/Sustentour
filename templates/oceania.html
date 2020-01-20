@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oceania</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../static/css/continentes.css">
+  <link rel="shortcut icon" href="../static/midia/imagens/logo.png" type="image/x-png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+ <script >
+  //Quando o documento estiver pronto
+$(document).ready(function() {
+   
+    //Função que mostra o conteúdo de acordo com o botão clicado
+    $("#menu li a").on('click', function(e) {
+        e.preventDefault();
+        var page = $(this).data('page');
+        $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
+            $(this).addClass('hide');
+            $('#pages .page[data-page="'+page+'"]').fadeIn('slow').removeClass('hide');
+        });
+    });
+    
+    //Função que insere a classe Active no botão que foi clicado
+    $("#menu li").on('click', function(){
+         $(this).siblings().removeClass('active');
+         $(this).addClass('active');
+    });
+});
+ </script>
+
+<style>
+
+  * {
+    font-family: "Yu Gothic Light";
+
+  }
+
+  .a a {
+    text-decoration: none;
+    color: #8B0000;
+  }
+
+	
+	#menu li {
+	list-style:none;
+	font-size: 20px;
+	display: inline-block;
+
+}
+
+#menu li a{
+  color: black;
+  font-family: "Yu Gothic Light";
+  word-spacing: 10px;
+  text-decoration:none;
+  top: -90px;
+  position: relative;
+  left: 700%;
+
+}
+
+#pages section header{
+  margin-bottom: 16px;
+}
+
+.page{display: none;}
+
+.texto2{
+	font-family: "Yu Gothic Light";
+	font-size: 35px;
+  text-align: center;
+
+}
+
+.uno{
+  height: 240px;
+  width: 540px;
+  background-color: lightgrey;
+  }
+
+.dos{
+  position: relative;
+  left:30%;
+  height: 240px;
+  width: 540px;
+  color: white;
+  background-color: black;
+  }
+    
+.dos:hover {
+  color: white;
+  background-color: grey;
+}
+
+.espacamento_line {
+  position: relative;
+  top:-100%; 
+  left: 45%;
+  margin-left: 15px;
+  line-height: 35px;
+  font-family: "Yu Gothic Light";
+	text-align: justify;
+}
+
+.img_lado2 {
+  position: absolute;
+  float: right;
+  right: 200px;
+  bottom: -20%;
+}
+
+.menu-button {
+  -webkit-transition: 0.4s;  /* Extensão do Chrome */ 
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  right: 640px;
+  bottom: -2890px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 24px;
+  background-color: black;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+
+footer {
+  background-color: black;
+}
+
+
+
+.italico {
+  margin: 0px auto:0;
+  padding: 1px;
+  font-family: "Yu Gothic Light";
+  color: white;
+  font-size: 8px;
+  text-align: center;
+}
+</style>
+
+
+
+
+
+
+</head>
+<body>
+	<div class="br">
+	<br>
+	<br>
+	<br>
+</div>
+	<br>
+	<br>
+	<div class="texto">
+		<h1>Bem Vindo a Oceania</h1>
+	</div>
+	<br>
+	<br>
+	<div class="imagem">
+		<img src="../static/midia/imagens/prazer.jpg" width="640" height="495">
+	</div>
+	<div class="img_lado">
+		<img src="../static/midia/imagens/mao.jpg" width="395" height="240">
+	</div>
+	<div class="img_lado2">
+		<img src="../static/midia/imagens/beg.jpg" width="395" height="240">
+	</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="linha">
+	<br>
+</div>
+<div class="coluna">
+<div class="fonte">
+<h1 >Lazer</h1>
+<p>A Oceania é um dos continentes que oferece à você paisagens deslumbrantes e que possibilita o maior conforto possível em suas hospedagens, assim como é um dos continentes que tem a melhor hospitalidade para os visitantes!</p> 
+
+<h1>Cultura</h1>
+<p>A cultura maori é a cultura predominante e mais popular cultivada na Oceania. O povo Maori é conhecido por serem muito bem receptivos. Na língua maori, a palavra maori representa toda uma cultura. Em lendas e outras tradições orais, a palavra distinguia seres humanos mortais de divindades e espíritos.</p>
+<h1>Aventura</h1>
+<p>A Oceania é um lugar bem conhecido não só pelas lindas paisagens, mas também pelas ótimas aventuras possíveis de se vivenciar por lá! Desde esportes radicais a esportes mais tranquilos, você pode optar por qualquer um deles e se tornar um grande aventureiro e explorador!</p>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 class="texto"> Verifique a prévia dos países mais visitados da Oceania</h2>
+<br>
+<br>
+
+
+	<img class="alinhar" src="../static/midia/imagens/nova.png" width="240" height="340">
+    <img src="../static/midia/imagens/australia.png" width="240" height="340" >
+    <img class="alinhar" src="../static/midia/imagens/micronesia.png" width="240" height="340">  
+    <img src="../static/midia/imagens/tuvalu.png" width="240" height="340">   
+    <img class="alinhar" src="../static/midia/imagens/palau.png" width="240" height="340">          
+
+
+ 	<img class="alinhar" src="../static/midia/imagens/tonga.png" width="240" height="340">
+    <img src="../static/midia/imagens/fiji.png" width="240" height="340" >
+    <img class="alinhar" src="../static/midia/imagens/vanuatu.png" width="240" height="340">  
+    <img src="../static/midia/imagens/timor.png" width="240" height="340">   
+    <img class="alinhar" src="../static/midia/imagens/samoa.png" width="240" height="340">
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<div class="centro">
+  <div class="menu-button"><i class="zmdi zmdi-share"></i>
+      <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+      <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
+      <a href="#"><i class="zmdi zmdi-codepen"></i></a>
+  </div>
+</div>
+
+<div class="linha">
+	<br>
+</div>
+
+
+<br>
+<br>
+<div class="centro">
+	<img src="../static/midia/imagens/l.jpg" alt="icone" width="105" height="125">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+	
+ <ul id="menu">
+    <li><a data-page="lazer" href="#"><h3> Lazer </h3> </a></li>
+    <li><a data-page="cultura" href="#"><h3> Cultura </h3> </a></li> 
+    <li><a data-page="aventura" href="#"><h3> Aventura </h3> </a></li>
+  </ul>
+
+ <div id="pages">
+    <section id="lazer" class="page" data-page="lazer">
+    <br>
+<div class="dos">
+					<img src="../static/midia/imagens/lazer.jpeg" width="240" height="240">
+					<p class="espacamento_line">Para um bom descanso, <br> recomendamos: Tuvalu, Fiji e <br>Palau, pois são <br> lugares paradisíacos para <br> você aproveitar as suas férias.<br></p>
+
+				</div>
+	</section> 
+
+	<section id="cultura" class="page hide" data-page="cultura"> 
+    <div class="dos">
+          <img src="../static/midia/imagens/ma.png" width="240" height="240">
+          <p class="espacamento_line">Nova Zelândia, Timor Leste e <br> Samoa são os principais países<br> que se destacam no<br> quesito
+            de valorizar<br> a cultura maori.</p>
+
+        </div>
+	</section>
+
+	<section id="aventura" class="page hide" data-page="aventura"> 
+    <div class="dos">
+          <img src="../static/midia/imagens/aventure.jpeg" width="240" height="240">
+          <p class="espacamento_line">Para curtir todas os esportes <br> radicais que a Oceania oferece,<br>Nova Zelândia, Austrália e Tonga <br> são os representantes que <br>possibilitam tornar você um <br> explorador e aventureiro!<br></p>
+
+        </div>
+	</section>
+
+
+
+
+<div class="texto">
+  <h2>Se identificou com todos os elementos que a Oceania oferece? Venha conhecer nossos pacotes de viagens clicando <div class="a"> <a href=compras.html>aqui!</a></h2></div>
+</div>
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<footer>
+<br>
+<div class="italico"> 
+  <h2>© 2018 Copyright: Todos os direitos reservados</h2>
+</div>
+<br>
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>África</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../static/css/continentes.css">
+  <link rel="shortcut icon" href="../static/midia/imagens/logo.png" type="image/x-png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+ <script >
+  //Quando o documento estiver pronto
+$(document).ready(function() {
+   
+    //Função que mostra o conteúdo de acordo com o botão clicado
+    $("#menu li a").on('click', function(e) {
+        e.preventDefault();
+        var page = $(this).data('page');
+        $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
+            $(this).addClass('hide');
+            $('#pages .page[data-page="'+page+'"]').fadeIn('slow').removeClass('hide');
+        });
+    });
+    
+    //Função que insere a classe Active no botão que foi clicado
+    $("#menu li").on('click', function(){
+         $(this).siblings().removeClass('active');
+         $(this).addClass('active');
+    });
+});
+ </script>
+
+<style>
+
+  * {
+    font-family: "Yu Gothic Light";
+  }
+
+	
+	#menu li {
+	list-style:none;
+	font-size: 20px;
+	display: inline-block;
+
+}
+
+#menu li a{
+  color: black;
+  font-family: "Yu Gothic Light";
+  word-spacing: 10px;
+  text-decoration:none;
+  top: -90px;
+  position: relative;
+  left: 700%;
+
+}
+
+#pages section header{
+  margin-bottom: 16px;
+}
+
+.page{display: none;}
+
+.texto2{
+	font-family: "Yu Gothic Light";
+	font-size: 35px;
+  text-align: center;
+
+}
+
+.uno{
+  height: 249px;
+  width: 550px;
+  background-color: lightgrey;
+  }
+
+.dos{
+  position: relative;
+  left:30%;
+  height: 249px;
+  width: 550px;
+  color: white;
+  background-color: black;
+  }
+    
+.dos:hover {
+  color: white;
+  background-color: grey;
+}
+
+.espacamento_line {
+  position: relative;
+  top:-100%; 
+  left: 45%;
+  margin-left: 15px;
+  line-height: 35px;
+  font-family: "Yu Gothic Light";
+	text-align: justify;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+
+.texto{
+	font-family: "Yu Gothic Light";
+	text-align: center;
+
+}
+
+.imagem {
+	position: absolute;
+	left: 100px;
+}
+
+.img_lado {
+	position: absolute;
+	float: right;
+	right: 195px;
+}
+
+.img_lado2 {
+	position: absolute;
+	float: right;
+	right: 195px;
+	bottom: -12%;
+}
+
+.br {
+	margin:0 auto;
+	background-color: black;
+	width: 100%;
+}
+.imagem:hover {
+	background-color: #8B8378;
+	opacity: 0.7;
+}
+
+.img_lado:hover{
+	background-color: #8B0000;
+	opacity: 0.7;
+}
+
+.img_lado2:hover{
+	background-color: #228B22;
+	opacity: 0.7;
+}
+
+
+
+
+.alinhar {
+	position: relative;
+	vertical-align:65px;
+	margin-left: 12px;
+    margin-right: 10px;
+
+}
+
+
+
+img:hover{
+	background-color: #BEBEBE;
+	opacity: 0.5;
+}
+
+
+
+
+
+
+.coluna {
+margin:0 auto;
+text-align: center;
+-moz-column-count: 3;
+-webkit-column-count:3;
+column-count:3;
+color:#000000;
+}
+
+
+.fonte {
+	font-family: "Yu Gothic Light";
+
+}
+
+#esquerda{float: left; width: 45%; height: 150px; overflow: auto; margin-top: 12px; margin-left: 10px;}
+#direita{float: right; width: 45%; height: 150px; overflow: auto; border-left: solid #CDCDB4 1px; padding-left: 80px; margin-top: 12px;}
+.diminuihr{background-color:#E9967A;}
+.linha{background-color: #E9967A}
+
+
+
+  .a a {
+    text-decoration: none;
+    color: #8B0000;
+  }
+
+
+
+
+.menu-button {
+  -webkit-transition: 0.4s;  /* Extensão do Chrome */ 
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  right: 640px;
+  bottom: -3200px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 24px;
+  background-color: black;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+.menu-button:hover {
+  background-color: black;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+}
+.menu-button a {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 24px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+.menu-button a:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+}
+.menu-button a:nth-child(2) {
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  background-color: #006400;
+}
+.menu-button a:nth-child(3) {
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  position: absolute;
+  right: 30px; /*Quando volta o ícone, precisa definir a posição*/
+  bottom: 10px;
+  background-color: #006400;
+}
+.menu-button a:nth-child(4) {
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  background-color: #006400;
+}
+.menu-button:hover a {
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+}
+.menu-button:hover a:nth-child(2) {  /*Twitter*/
+  right: -65px;
+  bottom: 60px;
+}
+.menu-button:hover a:nth-child(2):hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  background: #3ea1ec;
+}
+.menu-button:hover a:nth-child(3) { /*Google*/
+  right: 65px;
+  bottom: 65px;
+}
+.menu-button:hover a:nth-child(3):hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  background: #d83a2b;
+}
+.menu-button:hover a:nth-child(4) { /*Code*/
+  right: 0px;
+  bottom: 80px;
+}
+.menu-button:hover a:nth-child(4):hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  /*background: #323232;*/
+  background-color: black;
+}
+
+
+footer {
+  background-color: black;
+}
+
+
+.italico {
+  margin: 0px auto:0;
+  padding: 1px;
+  font-family: "Yu Gothic Light";
+  color: white;
+  font-size: 8px;
+  text-align: center;
+}
+
+
+.centro{text-align: center;}
+
+
+
+.esquerda_alinhar {
+  font-family: "Yu Gothic Light";
+  position: relative;
+  left: 15px;
+  text-align: center;
+}
+
+
+
+.hzinho{
+  font-family: "Yu Gothic Light";
+  text-align: center;
+  
+}
+
+aside {
+ position: relative;
+ left: 15px;
+ font-size: 20px;
+}
+
+
+
+.img_lado2 {
+  position: absolute;
+  float: right;
+  right: 195px;
+  bottom: -21%;
+}
+
+</style>
+
+
+
+
+
+
+</head>
+<body>
+	<div class="br">
+	<br>
+	<br>
+	<br>
+</div>
+	<br>
+	<br>
+	<div class="texto">
+		<h1>Bem Vindo a África </h1>
+	</div>
+	<br>
+	<br>
+	<div class="imagem">
+		<img src="../static/midia/imagens/hom.jpg" width="650" height="495">
+	</div>
+	<div class="img_lado">
+		<img src="../static/midia/imagens/afr.jpg" width="395" height="249">
+	</div>
+	<div class="img_lado2">
+		<img src="../static/midia/imagens/ad.jpg" width="395" height="249">
+	</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="linha">
+	<br>
+</div>
+<div class="coluna">
+<div class="fonte">
+<h1 >Lazer</h1>
+<p>Seja a sua viagem estilo África-chique ou África-autêntica, você vai ver como é fácil encontrar ótimas acomodações, se deslocar nas cidades e viajar pelo país!</p> 
+
+<h1>Cultura</h1>
+<p>Em praticamente qualquer lugar do país é possível fazer ótimas combinações de natureza, vida selvagem, cultura, aventura e tradição.</p>
+<h1>Aventura</h1>
+<p>A África é o centro da aventura no mundo. São mais de 130 tipos de atividades (e aumentando), de montanhismo a mergulho em gaiola com tubarões</p>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 class="texto"> Verifique a prévia dos países mais visitados da África</h2>
+<br>
+<br>
+
+
+	  <img class="alinhar" src="../static/midia/imagens/mongolia.png" width="249" height="350">
+    <img src="../static/midia/imagens/egito2.png" width="249" height="350" >
+    <img class="alinhar" src="../static/midia/imagens/zambia.png" width="249" height="350">  
+    <img src="../static/midia/imagens/namibia.png" width="249" height="350">   
+    <img class="alinhar" src="../static/midia/imagens/botsuana.png" width="249" height="350">          
+
+
+ 	  <img class="alinhar" src="../static/midia/imagens/madagascar2.png" width="249" height="350">
+    <img src="../static/midia/imagens/marrocos.png" width="249" height="350" >
+    <img class="alinhar" src="../static/midia/imagens/argelia.png" width="249" height="350">  
+    <img src="../static/midia/imagens/Tunísia.png" width="249" height="350">   
+    <img class="alinhar" src="../static/midia/imagens/Tanzânia.png" width="249" height="350">
+
+    <img class="alinhar" src="../static/midia/imagens/Quênia.png" width="249" height="350">
+    <img src="../static/midia/imagens/Caboverde.png" width="249" height="350" >
+    <img class="alinhar" src="../static/midia/imagens/Moçambique.png" width="249" height="350">  
+    <img src="../static/midia/imagens/Angola.png" width="249" height="350">   
+    <img class="alinhar" src="../static/midia/imagens/Camarões.png" width="249" height="350">
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<div class="centro">
+  <div class="menu-button"><i class="zmdi zmdi-share"></i>
+      <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+      <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
+      <a href="#"><i class="zmdi zmdi-codepen"></i></a>
+  </div>
+</div>
+
+<div class="linha">
+	<br>
+</div>
+
+
+<br>
+<br>
+<div class="centro">
+	<img src="../static/midia/imagens/l.jpg" alt="icone" width="105" height="125">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+	
+ <ul id="menu">
+    <li><a data-page="lazer" href="#"><h3> Lazer </h3> </a></li>
+    <li><a data-page="cultura" href="#"><h3> Cultura </h3> </a></li> 
+    <li><a data-page="aventura" href="#"><h3> Aventura </h3> </a></li>
+  </ul>
+
+ <div id="pages">
+    <section id="lazer" class="page" data-page="lazer">
+    <br>
+<div class="dos">
+					<img src="../static/midia/imagens/durban.jpg" width="249" height="249">
+					<p class="espacamento_line">Durban é como uma “Austrália africana”: <br> jovem, litorânea, cheia de points<br> descolados e moderninhos.<br> Enquanto a orla, galera interessada <br>em esportes radicais, famílias, <br>centros de lazer por toda a cidade.<br></p>
+
+				</div>
+	</section> 
+
+	<section id="cultura" class="page hide" data-page="cultura"> 
+    <div class="dos">
+          <img src="../static/midia/imagens/blem.jpg" width="249" height="249">
+          <p class="espacamento_line">Conhecida como “Cidade das Rosas”, <br> essa é uma das capitais do país.<br> Com ótimos museus e belas construções,<br> histórica e hospitaleira.Para os fãs de<br> “O Senhor dos Anéis”, Bloemfontein <br>é a cidade natal de J.R.R. Tolkien.</p>
+
+        </div>
+	</section>
+
+	<section id="aventura" class="page hide" data-page="aventura"> 
+    <div class="dos">
+          <img src="../static/midia/imagens/kruger.png" width="249" height="249">
+          <p class="espacamento_line">Para se aventurar <br> recomendamos o Kruger Park,<br> um dos melhores lugares do mundo<br> para fazer safáris.</p>
+
+        </div>
+	</section>
+
+
+
+
+<div class="texto">
+  <h2>Se identificou com todos os elementos que a Africa do Sul oferece? Venha conhecer nossos pacotes de viagens clicando <div class="a"><a href=compras.html>aqui!</a></h2></div>
+</div>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+<br>
+<div class="italico"> 
+  <h2>© 2018 Copyright: Todos os direitos reservados</h2>
+</div>
+<br>
+</footer>
+
+
+</body>
+</html>
+

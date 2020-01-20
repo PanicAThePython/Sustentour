@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>América</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../static/css/continentes.css">
+  <link rel="shortcut icon" href="../static/midia/imagens/logo.png" type="image/x-png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+ <script >
+  //Quando o documento estiver pronto
+$(document).ready(function() {
+   
+    //Função que mostra o conteúdo de acordo com o botão clicado
+    $("#menu li a").on('click', function(e) {
+        e.preventDefault();
+        var page = $(this).data('page');
+        $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
+            $(this).addClass('hide');
+            $('#pages .page[data-page="'+page+'"]').fadeIn('slow').removeClass('hide');
+        });
+    });
+    
+    //Função que insere a classe Active no botão que foi clicado
+    $("#menu li").on('click', function(){
+         $(this).siblings().removeClass('active');
+         $(this).addClass('active');
+    });
+});
+ </script>
+
+ <style>
+
+  * {
+    font-family: "Yu Gothic Light";
+  
+  }
+
+  .a a {
+    text-decoration: none;
+    color: #8B0000;
+  }
+
+	
+	#menu li {
+	list-style:none;
+	font-size: 20px;
+	display: inline-block;
+
+}
+
+#menu li a{
+  color: black;
+  font-family: "Yu Gothic Light";
+  word-spacing: 10px;
+  text-decoration:none;
+  top: -90px;
+  position: relative;
+  left: 700%;
+
+}
+
+#pages section header{
+  margin-bottom: 16px;
+}
+
+.page{display: none;}
+
+.texto2{
+	font-family: "Yu Gothic Light";
+	font-size: 35px;
+  text-align: center;
+
+}
+
+.uno{
+  height: 240px;
+  width: 540px;
+  background-color: lightgrey;
+  }
+
+.dos{
+  position: relative;
+  left:30%;
+  height: 240px;
+  width: 540px;
+  color: white;
+  background-color: black;
+  }
+    
+.dos:hover {
+  color: white;
+  background-color: grey;
+}
+
+.espacamento_line {
+  position: relative;
+  top:-100%; 
+  left: 45%;
+  margin-left: 15px;
+  line-height: 35px;
+  font-family: "Yu Gothic Light";
+	text-align: justify;
+}
+
+
+
+
+
+
+.menu-button {
+  -webkit-transition: 0.4s;  /* Extensão do Chrome */ 
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  right: 640px;
+  bottom: -2770px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 24px;
+  background-color: black;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+	<div class="br">
+	<br>
+	<br>
+	<br>
+</div>
+	<br>
+	<br>
+	<div class="texto">
+		<h1>Bem Vindo à América</h1>
+	</div>
+	<br>
+	<br>
+	<div class="imagem">
+		<img src="../static/midia/imagens/home.jpg" width="640" height="495">
+	</div>
+	<div class="img_lado">
+		<img src="../static/midia/imagens/brasil.png" width="395" height="240">
+	</div>
+	<div class="img_lado2">
+		<img src="../static/midia/imagens/granada.png" width="395" height="240">
+	</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="linha">
+	<br>
+</div>
+<div class="coluna">
+<div class="fonte">
+
+<h1>Lazer</h1>
+<p>A América é o continente que mais atrai turistas, tornando-se assim o continente mais influente do mundo. Como lazer, oferece desde passeios naturais até bares e danceterias incríveis!</p> 
+<h1>Cultura</h1>
+<p>Nosso continente se formou com a mistura das diversas culturas que aqui se encontram. Em cada região possuímos características culturais e populacionais diferentes, acolhendo à todos.</p>
+<br>
+<h1>Aventura</h1>
+<p>A América tem atraído diversos turistas em busca de aventura. O continente possui um catálogo diverso, contendo trilhas naturais e até mesmo rafting em rios. Venha e torne-se um grande aventureiro! </p>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 class="texto"> Verifique a prévia dos países mais visitados da América</h2>
+<br>
+<br>
+
+
+	<img class="alinhar" src="../static/midia/imagens/chile.png" width="240" height="340">
+    <img src="../static/midia/imagens/eua.png" width="240" height="340" >
+    <img class="alinhar" src="../static/midia/imagens/jamaica.png" width="240" height="340">  
+    <img src="../static/midia/imagens/mexico.png" width="240" height="340">   
+    <img class="alinhar" src="../static/midia/imagens/colombia.png" width="240" height="340">          
+
+
+ 	<img class="alinhar" src="../static/midia/imagens/bahamas.png" width="240" height="340">
+    <img src="../static/midia/imagens/guatemala.png" width="240" height="340" >
+    <img class="alinhar" src="../static/midia/imagens/republicadominicana.png" width="240" height="340">  
+    <img src="../static/midia/imagens/peru.png" width="240" height="340">   
+    <img class="alinhar" src="../static/midia/imagens/panama.png" width="240" height="340">
+
+
+<br>
+<br>
+	<div class="linha">
+	<br>
+</div>
+
+
+<br>
+<br>
+<div class="centro">
+	<img src="../static/midia/imagens/l.jpg" alt="icone" width="105" height="125">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+	
+ <ul id="menu">
+    <li><a data-page="lazer" href="#"><h3> Lazer </h3> </a></li>
+    <li><a data-page="cultura" href="#"><h3> Cultura </h3> </a></li> 
+    <li><a data-page="aventura" href="#"><h3> Aventura </h3> </a></li>
+  </ul>
+
+ <div id="pages">
+    <section id="lazer" class="page" data-page="lazer">
+    <br>
+<div class="dos">
+					<img src="../static/midia/imagens/lazer_america.jpg" width="240" height="240">
+					<p class="espacamento_line">Para relaxar e se divertir, <br> recomendamos: Estados Unidos, <br> Uruguai e Colômbia por <br>apresentarem lindas praias <br> e muita diversão!</p>
+
+				</div>
+	</section> 
+
+	<section id="cultura" class="page hide" data-page="cultura"> 
+    <div class="dos">
+          <img src="../static/midia/imagens/cultura_america.jpg" width="240" height="240">
+          <p class="espacamento_line">Para conhecer mais sobre o <br> local, recomendamos: Bolívia, <br> Brasil e México por  <br>apresentarem uma grande <br> diversidade cultural!</p>
+        </div>
+	</section>
+
+	<section id="aventura" class="page hide" data-page="aventura"> 
+    <div class="dos">
+          <img src="../static/midia/imagens/aventura_america.jpg" width="240" height="240">
+          <p class="espacamento_line">Para se aventurar, recomendamos: <br> Equador, Chile e Venezuela <br> por apresentarem uma grande <br>variedade de <br>atividades para aventureiros!</p>
+
+        </div>
+	</section>
+
+
+<br>
+<br>
+<br>
+
+<div class="texto">
+  <h2>Se identificou com todos os elementos que a América oferece? Venha conhecer nossos pacotes de viagens clicando <div class="a"><a href=compras.html>aqui!</a></h2></div>
+</div>
+</div>
+
+<div class="centro">
+  <div class="menu-button"><i class="zmdi zmdi-share"></i>
+      <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+      <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
+      <a href="#"><i class="zmdi zmdi-codepen"></i></a>
+  </div>
+</div>
+
+
+
+</body>
+</html>

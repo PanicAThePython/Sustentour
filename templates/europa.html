@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Europa</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../static/css/continentes.css">
+    <link rel="shortcut icon" href="../static/midia/imagens/logo.png" type="image/x-png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+ <script >
+  //Quando o documento estiver pronto
+$(document).ready(function() {
+   
+    //Função que mostra o conteúdo de acordo com o botão clicado
+    $("#menu li a").on('click', function(e) {
+        e.preventDefault();
+        var page = $(this).data('page');
+        $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
+            $(this).addClass('hide');
+            $('#pages .page[data-page="'+page+'"]').fadeIn('slow').removeClass('hide');
+        });
+    });
+    
+    //Função que insere a classe Active no botão que foi clicado
+    $("#menu li").on('click', function(){
+         $(this).siblings().removeClass('active');
+         $(this).addClass('active');
+    });
+});
+ </script>
+
+   
+     <style>
+
+
+
+
+#menu li {
+    list-style:none;
+    font-size: 20px;
+    display: inline-block;
+
+}
+
+#menu li a{
+  color: black;
+  font-family: "Yu Gothic Light";
+  word-spacing: 10px;
+  text-decoration:none;
+  top: -90px;
+  position: relative;
+  left: 700%;
+
+}
+
+
+
+
+
+         
+
+         .italico {
+    margin: 0px auto:0;
+    padding: 1px;
+    font-family: "Yu Gothic Light";
+    color: white;
+    font-size: 8px;
+    text-align: center;
+}
+
+
+.imagem {
+    position: absolute;
+    left: 100px;
+}
+
+.img_lado {
+    position: absolute;
+    float: right;
+    right: 200px;
+}
+
+.img_lado2 {
+    position: absolute;
+    float: right;
+    right: 200px;
+    bottom: -10%;
+}
+
+
+
+
+#pages section header{
+  margin-bottom: 16px;
+}
+
+.page{display: none;}
+
+.texto2{
+    font-family: "Yu Gothic Light";
+    font-size: 35px;
+  text-align: center;
+
+}
+
+
+ .a a {
+    text-decoration: none;
+    color: #8B0000;
+  }
+
+.uno{
+  height: 240px;
+  width: 540px;
+  background-color: lightgrey;
+  }
+
+.dos{
+  position: relative;
+  left:30%;
+  height: 240px;
+  width: 540px;
+  color: white;
+  background-color: black;
+  }
+    
+.dos:hover {
+  color: white;
+  background-color: grey;
+}
+
+.espacamento_line {
+  position: relative;
+  top:-100%; 
+  left: 45%;
+  margin-left: 15px;
+  line-height: 35px;
+  font-family: "Yu Gothic Light";
+    text-align: justify;
+}
+
+
+.menu-button {
+  -webkit-transition: 0.4s;  /* Extensão do Chrome */ 
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  right: 640px;
+  bottom: -4400px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 24px;
+  background-color: black;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+
+footer {
+  background-color: black;
+}
+
+
+.italico {
+  margin: 0px auto:0;
+  padding: 1px;
+  font-family: "Yu Gothic Light";
+  color: white;
+  font-size: 8px;
+  text-align: center;
+}
+
+
+     </style>        
+    
+</head>
+<body>
+	<div class="br">
+	<br>
+	<br>
+	<br>
+</div>
+	<br>
+	<br>
+	<div class="texto">
+		<h1>Bem Vindo à Europa</h1>
+	</div>
+	<br>
+	<br>
+	<div class="imagem">
+		<img src="../static/midia/imagens/lazer_europa.jpg" width="640" height="495">
+	</div>
+	<div class="img_lado">
+		<img src="../static/midia/imagens/coliseu.jpg" width="395" height="240">
+	</div>
+	<div class="img_lado2">
+		<img src="../static/midia/imagens/aventura_europa.jpg" width="395" height="240">
+	</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="linha">
+	<br>
+</div>
+<div class="coluna">
+<div class="fonte">
+<h1>Lazer</h1>
+<p>A Europa é um dos continentes que oferece à você as paisagens mais belas e os mais famosos e importantes pontos turísticos, sendo o lugar que mais recebe visitantes por ano!</p>
+<br>
+<h1>Cultura</h1>
+<p>A cultura na Europa é muito diversificada por ter sido cenário de grandes revoluções tanto culturais quanto econômicas, políticas e sociais, além do fato de sua cultura ter servido como base para a formação
+    de outras.
+</p>
+<br>
+<h1>Aventura</h1>
+<p>Não é difícil achar aventura na Europa. Por ser um lugar montanhoso, o alpinismo e o bung jump são atividades muito praticadas. Mas para quem não quiser subir a montanha (ou descer dela),
+    há outras possíveis atividades, como praticar canoagem ou natação no mar que cerca o continente. </p>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 class="texto"> Verifique a prévia dos países mais visitados da Europa</h2>
+<br>
+<br>
+        
+
+    <img class="alinhar" src="../static/midia/imagens/alemanha.png" width="250" height="350">                        
+    <img src="../static/midia/imagens/austria.png" width="250" height="350" >
+    <img class="alinhar" src="../static/midia/imagens/belgica.png" width="250" height="350">  
+    <img src="../static/midia/imagens/croacia.png" width="250" height="350">   
+    <img class="alinhar" src="../static/midia/imagens/dinamarca.png" width="250" height="350">          
+
+
+    <img class="alinhar" src="../static/midia/imagens/escocia.png" width="250" height="350">
+    <img src="../static/midia/imagens/eslovenia.png" width="250" height="350" >
+    <img class="alinhar" src="../static/midia/imagens/espanha.png" width="250" height="350">  
+    <img src="../static/midia/imagens/finlandia.png" width="250" height="350">   
+    <img class="alinhar" src="../static/midia/imagens/frança.png" width="250" height="350">
+
+    <img class="alinhar" src="../static/midia/imagens/grecia.png" width="250" height="350">
+    <img src="../static/midia/imagens/holanda.png" width="250" height="350" >
+    <img class="alinhar" src="../static/midia/imagens/hungria.png" width="250" height="350">  
+    <img src="../static/midia/imagens/inglaterra.png" width="250" height="350">   
+    <img class="alinhar" src="../static/midia/imagens/irlanda.png" width="250" height="350">
+
+    <img class="alinhar" src="../static/midia/imagens/islandia.png" width="250" height="350">
+    <img src="../static/midia/imagens/italia.png" width="250" height="350" >
+    <img class="alinhar" src="../static/midia/imagens/macedonia.png" width="250" height="350">  
+    <img src="../static/midia/imagens/malta.png" width="250" height="350">   
+    <img class="alinhar" src="../static/midia/imagens/monaco.png" width="250" height="350">
+
+    <img class="alinhar" src="../static/midia/imagens/montenegro.png" width="250" height="350">
+    <img src="../static/midia/imagens/noruega.jpg" width="250" height="350" >
+    <img class="alinhar" src="../static/midia/imagens/polonia.png" width="250" height="350">  
+    <img src="../static/midia/imagens/portugal.png" width="250" height="350">   
+    <img class="alinhar" src="../static/midia/imagens/republica tcheca.png" width="250" height="350">
+
+    <img class="alinhar" src="../static/midia/imagens/romenia.jpeg" width="250" height="350">
+    <img src="../static/midia/imagens/russia.png" width="250" height="350" >
+    <img class="alinhar" src="../static/midia/imagens/suecia.png" width="250" height="350">  
+    <img src="../static/midia/imagens/suiça.png" width="250" height="350">   
+    <img class="alinhar" src="../static/midia/imagens/vaticano.png" width="250" height="350">
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="linha">
+    <br>
+</div>
+    <br>
+    <br>
+    <br>
+   <div class="centro">
+    <img src="../static/midia/imagens/l.jpg" alt="icone" width="105" height="125">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<ul id="menu">
+    <li><a data-page="lazer" href="#"><h3> Lazer </h3> </a></li>
+    <li><a data-page="cultura" href="#"><h3> Cultura </h3> </a></li> 
+    <li><a data-page="aventura" href="#"><h3> Aventura </h3> </a></li>
+  </ul>
+
+ <div id="pages">
+    <section id="lazer" class="page" data-page="lazer">
+    <br>
+<div class="dos">
+                    <img src="../static/midia/imagens/lazere.jpg" width="240" height="240">
+                    <p class="espacamento_line">Para um bom descanso, <br> recomendamos: Inglaterra, Macedônia, <br> Suécia, Itália, Espanha, Suíça,<br> Polônia e Portugal por apresentarem <br> ótimas atrações turísticas <br> e restaurantes.</p>
+
+                </div>
+    </section> 
+
+    <section id="cultura" class="page hide" data-page="cultura"> 
+    <div class="dos">
+          <img src="../static/midia/imagens/culturae.jpg" width="240" height="240">
+          <p class="espacamento_line">Para conhecer um pouco mais sobre o <br> local, recomendamos: Alemanha, <br> Dinamarca, Finlândia, Rússia, <br> Vaticano, Hungria, França e Holanda por <br> apresentarem atrações  históricas e <br> museus muito famosos.</p>
+
+        </div>
+    </section>
+
+    <section id="aventura" class="page hide" data-page="aventura"> 
+    <div class="dos">
+          <img src="../static/midia/imagens/aventurae.jpg" width="240" height="240">
+          <p class="espacamento_line">Para se aventurar, recomendamos: <br> Áustria, Malta e Noruega por <br> apresentarem  atrações com esportes <br> radicais como o esqui,<br> por exemplo.</p>
+
+        </div>
+    </section>
+
+
+<br>
+
+<div class="texto">
+  <h2>Se identificou com todos os elementos que a Europa oferece? Venha conhecer nossos pacotes de viagens clicando <div class="a"><a href=compras.html>aqui!</a></h2></div>
+</div>
+
+
+
+
+
+   
+
+    
+    <div class="centro">
+        <div class="menu-button"><i class="zmdi zmdi-share"></i>
+            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+            <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
+            <a href="#"><i class="zmdi zmdi-codepen"></i></a>
+        </div>
+    </div>
+    
+    
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+    <br>
+    <div class="italico">	
+        <h2>© 2018 Copyright: Todos os direitos reservados</h2>
+    </div>
+    <br>
+    </footer>
+    
+
+
+</body>
+</html>
+

@@ -1,0 +1,271 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+
+#menuu ul {
+	padding:25px;
+	margin:20px;
+	list-style:none;
+	font-size: 20px;
+	color: white;
+	word-spacing: 35px;
+	font-family:"Yu Gothic Light";
+	float: right;
+	text-decoration: none;
+	position: relative;
+	top: -40px;
+}
+
+#menuu ul li {display: inline;}
+
+.botao{
+	background-color: #8B0000;
+	padding: 14px 40px;
+}
+
+.centro{text-align: center;}
+
+#menu li {
+ 	padding:20px;
+	margin:20px;
+	list-style:none;
+	font-size: 20px;
+	display: inline-block;
+}
+
+#menu li a{
+  color: white;
+  font-family: "Yu Gothic Light";
+  word-spacing: 35px;
+  text-decoration:none;
+  top: -90px;
+  position: relative;
+
+}
+
+#pages section header{
+  margin-bottom: 16px;
+}
+
+.page{display: none;}
+.hide { display: none;}
+.active{ background: white; }
+
+
+
+
+
+
+
+ body { background-image: url(Imagens/verde2.jpg);
+		background-repeat: no-repeat;
+	background-size:  1375px 670px;
+}
+
+
+
+
+.textoblc {
+	color: white;
+	font-family: "Yu Gothic Light";
+	font-size: 25px;
+	text-align: center;	
+}
+
+.centro {
+	text-align: center;
+	color: white;
+	font-family: "Yu Gothic";
+	font-size: 20px;
+	position: relative;
+	bottom: -30px;
+}
+
+
+.img img {text-align: center;
+	  margin:auto;
+	  width:1345px;
+	  height: 460px;
+}
+
+.alinhar {
+	vertical-align:65px;
+}
+
+
+
+.fade {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInUp {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInUp {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
+
+
+
+
+
+.menu-button {
+  -webkit-transition: 0.4s;  /* Extensão do Chrome */ 
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  right: 640px;
+  bottom: -100px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 24px;
+  background-color: black;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+.menu-button:hover {
+  background-color: black;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+}
+.menu-button a {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 24px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+.menu-button a:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+}
+.menu-button a:nth-child(2) {
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  background-color: #006400;
+}
+.menu-button a:nth-child(3) {
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  position: absolute;
+  right: 30px; /*Quando volta o ícone, precisa definir a posição*/
+  bottom: 10px;
+  background-color: #006400;
+}
+.menu-button a:nth-child(4) {
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  background-color: #006400;
+}
+.menu-button:hover a {
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+}
+.menu-button:hover a:nth-child(2) {  /*Twitter*/
+  right: -65px;
+  bottom: 60px;
+}
+.menu-button:hover a:nth-child(2):hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  background: #3ea1ec;
+}
+.menu-button:hover a:nth-child(3) { /*Google*/
+  right: 65px;
+  bottom: 65px;
+}
+.menu-button:hover a:nth-child(3):hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  background: #d83a2b;
+}
+.menu-button:hover a:nth-child(4) { /*Code*/
+  right: 0px;
+  bottom: 80px;
+}
+.menu-button:hover a:nth-child(4):hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  /*background: #323232;*/
+  background-color: black;
+}
+
+
+footer {
+	background-color: black;
+}
+
+
+
+.italico {
+	margin: 0px auto:0;
+	padding: 1px;
+	font-family: "Yu Gothic Light";
+	color: white;
+	font-size: 8px;
+	text-align: center;
+}
+
+
+.texto{
+	font-family: "Yu Gothic Light";
+	font-size: 40px;
+	text-align: center;
+
+}
+
+
+
+
+.cultura img {
+    float:left;
+    margin:0 20px 10px 0;
+  }
+
+.espacamento_line {
+	line-height: 35px;
+	text-align: justify;
+}
